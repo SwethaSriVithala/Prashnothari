@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial scale=1.0">
+	  <title>Prashnothari</title>
+	  <link rel="stylesheet" href="style.css">
+	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   </head>
+   
+   <body>
+      <div class="start_btn"><button>Level-1</button></div>
+	  <div class="rules_btn"><button>Quiz Rules</button></div>
+	  <div class="info_box">
+	     <div class="info_title">
+			<span>Rules of the Quiz</span>
+		 </div>
+		 <div class="info_list">
+		    <div class="info">1. You will have only <span>15 Seconds</span> per each question</div>
+			<div class="info">2. Once you select an option, you cannot reselect</div>
+			<div class="info">3. You cannot select any option once the tie goes off</div>
+			<div class="info">4. You cannot exit from the quiz while you are playing</div>
+			<div class="info">5. Only if you get all correct answers in the level next level unlocks</div>
+		 </div>
+		 <div class="buttons">
+		    <button class="quit">Exit</button>
+			<button class="restart">Retry</button>
+		 </div>
+	  </div>
+	  
+	  <div class="quiz_box">
+	     <header>
+		    <div class="title">Awesome Quiz Application</div>
+			<div class="timer">
+			   <div class="time_text">Time Left</div>
+			   <div class="timer_sec">15</div>
+			</div>
+		 </header>
+		 <section>
+		    <div class="que_text">
+			   <span>What does HTML stand for?</span>
+			</div>
+			<div class="option_list">
+			   <div class="option">
+				   <span>Hyper Text Preprocessor</span>
+				   <div class="icon tick"><i class="fas fa-check"></i></div>
+			   </div>
+			   <div class="option">
+				   <span>Hyper Text Markup Language</span>
+				   <div class="icon cross"><i class="fas fa-times"></i></div>
+				</div>
+				<div class="option">
+				   <span>Hyper Text Multi Language</span>
+				</div>
+				<div class="option">
+				   <span>Hyper Text Multiple Language</span>
+				</div>
+			</div>
+		 </section>
+		 <footer>
+		    <div class="total_que">
+			   <span><p>2</p>of<p>5</p>Questions</span>
+			</div>
+			<button class="next_btn">Next</button>
+		 </footer>
+	  </div>
+	  
+    </div>
+   </body>
+</html>
