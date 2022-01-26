@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial scale=1.0">
-	  <title>Prashnothari</title>
-	  <link rel="stylesheet" href="style.css">
-	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   </head>
-   
-   <body>
-      <div class="start_btn"><button>Level-1</button></div>
-	  <div class="rules_btn"><button>Quiz Rules</button></div>
-	  <div class="info_box">
-	     <div class="info_title">
-			<span>Rules of the Quiz</span>
-		 </div>
-		 <div class="info_list">
-		    <div class="info">1. You will have only <span>15 Seconds</span> per each question</div>
-			<div class="info">2. Once you select an option, you cannot reselect</div>
-			<div class="info">3. You cannot select any option once the tie goes off</div>
-			<div class="info">4. You cannot exit from the quiz while you are playing</div>
-			<div class="info">5. Only if you get all correct answers in the level next level unlocks</div>
-		 </div>
-		 <div class="buttons">
-		    <button class="quit">Exit</button>
-			<button class="restart">Retry</button>
-		 </div>
-	  </div>
-	  
-	  <div class="quiz_box">
-	     <header>
-		    <div class="title">Awesome Quiz Application</div>
-			<div class="timer">
-			   <div class="time_text">Time Left</div>
-			   <div class="timer_sec">15</div>
-			</div>
-		 </header>
-		 <section>
-		    <div class="que_text">
-			   <span>What does HTML stand for?</span>
-			</div>
-			<div class="option_list">
-			   <div class="option">
-				   <span>Hyper Text Preprocessor</span>
-				   <div class="icon tick"><i class="fas fa-check"></i></div>
-			   </div>
-			   <div class="option">
-				   <span>Hyper Text Markup Language</span>
-				   <div class="icon cross"><i class="fas fa-times"></i></div>
-				</div>
-				<div class="option">
-				   <span>Hyper Text Multi Language</span>
-				</div>
-				<div class="option">
-				   <span>Hyper Text Multiple Language</span>
-				</div>
-			</div>
-		 </section>
-		 <footer>
-		    <div class="total_que">
-			   <span><p>2</p>of<p>5</p>Questions</span>
-			</div>
-			<button class="next_btn">Next</button>
-		 </footer>
-	  </div>
-	  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashnothari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+	<div class="start_btn"><button>Start</button></div>
+	<div class="rules_btn"><button>Quiz Rules</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quit</button>
+        </div>
     </div>
-   </body>
+	
+<!--	<div class="level_box">
+		<div class="buttons">
+            <button class="level_1">Level - 1</button>
+			<button class="level">Level - 2</button>
+            <button class="level">Level - 3</button>
+			<button class="level">Level - 4</button>
+            <button class="level">Level - 5</button>
+        </div>
+	</div> -->
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+			<button class="next_level">Next</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
 </html>
