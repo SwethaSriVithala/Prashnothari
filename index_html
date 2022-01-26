@@ -25,16 +25,6 @@
             <button class="quit">Quit</button>
         </div>
     </div>
-	
-<!--	<div class="level_box">
-		<div class="buttons">
-            <button class="level_1">Level - 1</button>
-			<button class="level">Level - 2</button>
-            <button class="level">Level - 3</button>
-			<button class="level">Level - 4</button>
-            <button class="level">Level - 5</button>
-        </div>
-	</div> -->
 
     <div class="quiz_box">
         <header>
