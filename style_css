@@ -14,12 +14,23 @@ body{
     color: #fff;
     background: #007bff;
 }
+.title-box{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-.start_btn,
 .info_box,
 .quiz_box,
 .result_box,
-.level_box{
+.level_box,
+.introContainer{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,26 +49,11 @@ body{
     transform: translate(-50%, -50%) scale(1);
 }
 
-.rules_btn{
-	   position: absolute;
-	   top: 10%;
-	   left: 90%;
-	   transform: translate(-90%,-10%);
-	   box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
-					0px 4px 8px 0 rgba(0,0,0,0.19);
-   }
-
-.start_btn button,
-.rules_btn button{
-    font-size: 15px;
-    font-weight: 500;
-    color: #007bff;
-    padding: 15px 30px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
+.introContainer{
+    width: 540px;
+    height: 200px;
     background: #fff;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
 .info_box{
@@ -70,10 +66,24 @@ body{
     transition: all 0.3s ease;
 }
 
-.info_box .info-title{
+.info_box .info-title,
+.level_box .level-title
+{
     height: 60px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-box .intro-title
+{
+    height: 60px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -95,6 +105,7 @@ body{
     font-weight: 600;
     color: #007bff;
 }
+
 .info_box .buttons{
     height: 60px;
     display: flex;
@@ -102,20 +113,6 @@ body{
     justify-content: flex-end;
     padding: 0 30px;
     border-top: 1px solid lightgrey;
-}
-
-.info_box .buttons button{
-    margin: 0 5px;
-    height: 40px;
-    width: 100px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #007bff;
-    transition: all 0.3s ease;
 }
 
 .quiz_box{
@@ -319,7 +316,7 @@ footer button.show{
 
 .level_box{
     width: 500px;
-	height: 300px;
+    height: 380px;
     background: #fff;
     border-radius: 5px;
 	justify-content: center;
@@ -330,7 +327,8 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
-.level_box .buttons{
+.level_box .buttons,
+.introContainer .buttons{
     height: 60px;
     display: block;
     align-items: center;
@@ -339,10 +337,17 @@ footer button.show{
     border-top: 1px solid lightgrey;
 }
 
-.level_box .buttons button{
+.title-box .intro-title,
+.introContainer .buttons{
+    margin-left: 170px;
+}
+
+.level_box .buttons button,
+.introContainer .buttons button,
+.info_box .buttons button{
     margin: 5px 5px;
     height: 40px;
-    width: 100px;
+    width: 150px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -401,26 +406,7 @@ footer button.show{
 
 .buttons button.restart,
 .buttons button.quit,
-.buttons button.level01,
-.buttons button.level02,
-.buttons button.level03,
-.buttons button.level04,
-.buttons button.level05,
-.buttons button.level06,
-.buttons button.level07,
-.buttons button.level08,
-.buttons button.level09,
-.buttons button.level10,
-.buttons button.level11,
-.buttons button.level12,
-.buttons button.level13,
-.buttons button.level14,
-.buttons button.level15,
-.buttons button.level16,
-.buttons button.level17,
-.buttons button.level18,
-.buttons button.level19,
-.buttons button.level20
+.buttons button#level_btn
 {
     color: #007bff;
     background: #fff;
@@ -428,26 +414,7 @@ footer button.show{
 
 .buttons button.restart:hover,
 .buttons button.quit:hover,
-.buttons button.level01:hover,
-.buttons button.level02:hover,
-.buttons button.level03:hover,
-.buttons button.level04:hover,
-.buttons button.level05:hover,
-.buttons button.level06:hover,
-.buttons button.level07:hover,
-.buttons button.level08:hover,
-.buttons button.level09:hover,
-.buttons button.level10:hover,
-.buttons button.level11:hover,
-.buttons button.level12:hover,
-.buttons button.level13:hover,
-.buttons button.level14:hover,
-.buttons button.level15:hover,
-.buttons button.level16:hover,
-.buttons button.level17:hover,
-.buttons button.level18:hover,
-.buttons button.level19:hover,
-.buttons button.level20:hover
+.buttons button#level_btn:hover
 {
     color: #fff;
     background: #007bff;
